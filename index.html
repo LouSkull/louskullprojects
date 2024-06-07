@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #181818;
+            color: #fff;
+        }
+
+        .projects-section {
+            text-align: center;
+            padding: 2em;
+        }
+
+        .projects-section h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .projects-section p {
+            font-size: 1em;
+            margin-bottom: 2em;
+            color: #bbb;
+        }
+
+        .github-button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .github-button:hover {
+            background-color: #357ABD;
+            transform: scale(1.05);
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+        }
+
+        .portfolio-item {
+            background-color: #282828;
+            border-radius: 10px;
+            padding: 1em;
+            width: calc(100% / 3 - 2em);
+            box-sizing: border-box;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.5em;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .portfolio-item p {
+            font-size: 0.9em;
+            margin-bottom: 1em;
+            color: #bbb;
+        }
+
+        .portfolio-item button {
+            background-color: #4a90e2;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .portfolio-item button:hover {
+            background-color: #357ABD;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 1em);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: calc(100% - 2em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <p>I have worked on a wide range of projects. From python apps to C# apps. Here are some of my projects.</p>
+            <a href="https://github.com/LouSkull" class="github-button">GitHub Profile</a>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>EWT</h3>
+                    <p>EWT: A powerful Python utility for data analysis and automation. Features user-friendly interface and robust performance, ideal for developers and data scientists.</p>
+                    <button onclick="openLink('https://github.com/LouSkull/EasyWindowsTool-Reborn/releases')">View Project</button>
+                </div>
+                <div class="portfolio-item">
+                    <h3>IPGrabber</h3>
+                    <p>A simple C# script to capture and log IP addresses for educational purposes.</p>
+                    <button onclick="openLink('https://github.com/LouSkull/IPGrabber')">View Project</button>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Ubuntu tool</h3>
+                    <p>UbuntuTool: A Python script to manage package management, disk usage, file management, development tools, and network tools on a Linux system.</p>
+                    <button onclick="openLink('https://github.com/LouSkull/UbuntuTool')">View Project</button>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Fortnite Zzero delay</h3>
+                    <p>C# app to reduce input delay in Fortnite for better performance.</p>
+                    <button onclick="openLink('https://github.com/LouSkull/Fortnite-0-delay/releases')">View Project</button>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Better CMD</h3>
+                    <p>C# app to reduce input delay in Fortnite for better performance.</p>
+                    <button onclick="openLink('https://github.com/LouSkull/Updated-CMD/releases')">View Project</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script>
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
